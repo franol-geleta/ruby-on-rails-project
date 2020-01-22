@@ -1,0 +1,16 @@
+<h1>Add Cources</h1>
+<%= form_for :course, url: courses_path      do |c| %>
+  <p>
+    <%= c.label :Course_title %><br>
+    <%= c.text_field :name %><br>
+  </p>
+  <p>
+    <%= c.label :Course_Description %><br>
+    <%= c.text_area :desc %>
+  </p>
+  <p>
+    <%= c.submit %>
+  </p>
+
+
+<% end %>
